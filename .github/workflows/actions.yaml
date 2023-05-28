@@ -5,6 +5,10 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List files
+        run: |
+          pwd >> $pwd
+          echo "present working directiry in the runnes is - $pwd"
       - name: Simple JS action who takes input
         id: greet
         uses: actions/hello-world-javascript-action@be24b1ba147bc3acbf8f3f3665b3cca7e4f60a76
