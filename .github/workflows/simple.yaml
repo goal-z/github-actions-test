@@ -12,3 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo greeting
+        run: echo "good day!!"
