@@ -9,6 +9,8 @@ jobs:
         run: |
           pwd
           ls
+      - name: Checkout
+        uses: actions/checkout@v1
       - name: Simple JS action who takes input
         id: greet
         uses: actions/hello-world-javascript-action@be24b1ba147bc3acbf8f3f3665b3cca7e4f60a76
